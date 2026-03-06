@@ -37,7 +37,7 @@ const PRODUCTS = [
     },
     options: ["Апгрейд мотора до 800/1000W", "Кожаное сиденье (чёрно-красное / чёрное)", "Сиденье для сопровождающего сзади", "Подставка для ног", "Электрический подъём сиденья", "Одноручное управление", "Электрическое лежание", "Козырёк от солнца", "Электромагнитные тормоза", "Масляные дисковые тормоза", "Электрический подъём ног", "Ручка-акселератор", "Апгрейд задних колёс до 16\""],
     images: ["img/king-kong-600w-main.jpg", "img/king-kong-600w-alt1.jpg", "img/king-kong-600w-alt2.jpg"],
-    price: 185000,
+    price: 370000,
     catalogPage: 2
   },
   {
@@ -69,7 +69,7 @@ const PRODUCTS = [
     },
     options: ["Апгрейд мотора до 1000W", "Кожаное сиденье", "Санитарное сиденье", "Электрический подъём сиденья", "Одноручное управление", "Электрическое лежание", "Козырёк от солнца", "Электромагнитные тормоза", "Электрический подъём ног", "Кастомизация размера сиденья", "Ручка-акселератор"],
     images: ["img/king-kong-800w-main.jpg", "img/king-kong-800w-alt1.jpg", "img/king-kong-800w-alt2.jpg"],
-    price: 199000,
+    price: 398000,
     catalogPage: 3
   },
   {
@@ -102,7 +102,7 @@ const PRODUCTS = [
     },
     options: ["Апгрейд мотора до 1000W", "Кожаное сиденье", "Электромагнитные тормоза", "Масляные дисковые тормоза", "Одноручное управление", "Электрический подъём ног", "Ручка-акселератор", "Кастомизация размера сиденья"],
     images: ["img/king-kong-double-main.jpg", "img/king-kong-double-alt1.jpg", "img/king-kong-double-alt2.jpg"],
-    price: 225000,
+    price: 450000,
     catalogPage: 4
   },
   {
@@ -134,7 +134,7 @@ const PRODUCTS = [
     },
     options: ["Апгрейд мотора до 800/1000W", "Кожаное сиденье", "Электрический подъём ног", "Масляные дисковые тормоза", "Ручка-акселератор", "Регулируемая корзина для лежания", "Кастомизация размера сиденья", "Одноручное управление", "Электромагнитные тормоза"],
     images: ["img/standing-king-kong-main.jpg", "img/standing-king-kong-alt1.jpg", "img/standing-king-kong-alt2.jpg"],
-    price: 215000,
+    price: 430000,
     catalogPage: 5
   },
   {
@@ -166,7 +166,7 @@ const PRODUCTS = [
     },
     options: ["Кожаное сиденье", "Сиденье для сопровождающего сзади", "Ручная регулировка подъёма ног", "Электрический подъём ног", "Электрическое лежание", "Электрический подъём сиденья", "Козырёк от солнца", "Беспроводной пульт управления", "Подставка для ног", "Апгрейд задних колёс до 16\"", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
     images: ["img/comfort-joystick-main.jpg", "img/comfort-joystick-alt1.jpg", "img/comfort-joystick-alt2.jpg"],
-    price: 155000,
+    price: 310000,
     catalogPage: 6
   },
   {
@@ -198,7 +198,7 @@ const PRODUCTS = [
     },
     options: ["Отдельный подголовник / интегрированное гоночное сиденье", "Сиденье для сопровождающего сзади", "Козырёк от солнца", "Беспроводной пульт", "Апгрейд задних колёс до 16\"", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
     images: ["img/comfort-offroad-main.jpg", "img/comfort-offroad-alt1.jpg", "img/comfort-offroad-alt2.jpg"],
-    price: 165000,
+    price: 330000,
     catalogPage: 7
   },
   {
@@ -230,7 +230,7 @@ const PRODUCTS = [
     },
     options: ["Сиденье для сопровождающего сзади", "Ручная регулировка подъёма ног", "Электрический подъём ног", "Электрическое лежание", "Электрический подъём сиденья", "Козырёк от солнца", "Беспроводной пульт", "Санитарное сиденье", "Апгрейд задних колёс до 16\"", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
     images: ["img/comfort-compact-main.jpg", "img/comfort-compact-alt1.jpg", "img/comfort-compact-alt2.jpg"],
-    price: 159000,
+    price: 318000,
     catalogPage: 8
   },
   {
@@ -262,7 +262,7 @@ const PRODUCTS = [
     },
     options: ["Регулируемые / съёмные подлокотники", "Сиденье для сопровождающего сзади", "Подставка для ног", "Электрическое лежание", "Электрический подъём ног", "Козырёк от солнца", "Беспроводной пульт", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
     images: ["img/comfort-suspension-main.jpg", "img/comfort-suspension-alt1.jpg", "img/comfort-suspension-alt2.jpg"],
-    price: 189000,
+    price: 378000,
     catalogPage: 9
   },
   {
@@ -295,7 +295,7 @@ const PRODUCTS = [
     },
     options: ["АКБ: 24V 12Ah свинцово-кислотный (стандарт)", "АКБ: 24V 24Ah свинцово-кислотный", "АКБ: 24V 12Ah литий", "АКБ: 24V 20Ah литий", "Чехол для ног (реабилитация)"],
     images: ["img/velo-main.jpg", "img/velo-alt1.jpg", "img/velo-alt2.jpg"],
-    price: 69000,
+    price: 138000,
     catalogPage: 41
   },
 
@@ -329,7 +329,7 @@ const PRODUCTS = [
     },
     options: ["Электрический подъём ног (опция)"],
     images: ["img/cloudrise-main.jpg", "img/cloudrise-alt1.jpg", "img/cloudrise-alt2.jpg"],
-    price: 169000,
+    price: 338000,
     catalogPage: 21
   },
   {
@@ -361,7 +361,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/cloudrise-max-main.jpg", "img/cloudrise-max-alt1.jpg", "img/cloudrise-max-alt2.jpg"],
-    price: 199000,
+    price: 398000,
     catalogPage: 22
   },
   {
@@ -393,7 +393,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/cloudrise-mini-main.jpg", "img/cloudrise-mini-alt1.jpg", "img/cloudrise-mini-alt2.jpg"],
-    price: 155000,
+    price: 310000,
     catalogPage: 23
   },
   {
@@ -418,7 +418,7 @@ const PRODUCTS = [
     },
     options: ["Санитарное сиденье", "Полная кастомизация размеров"],
     images: ["img/wheelchair-bed-main.jpg", "img/wheelchair-bed-alt1.jpg", "img/wheelchair-bed-alt2.jpg"],
-    price: 195000,
+    price: 390000,
     catalogPage: 20
   },
   {
@@ -450,7 +450,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/th201hk-main.jpg", "img/th201hk-alt1.jpg", "img/th201hk-alt2.jpg"],
-    price: 92000,
+    price: 184000,
     catalogPage: 27
   },
   {
@@ -482,7 +482,7 @@ const PRODUCTS = [
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина для хранения", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног"],
     images: ["img/th201-main.jpg", "img/th201-alt1.jpg", "img/th201-alt2.jpg"],
-    price: 85000,
+    price: 170000,
     catalogPage: 24
   },
   {
@@ -514,7 +514,7 @@ const PRODUCTS = [
     },
     options: ["Два стиля задних колёс (полые / дисковые)", "Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног", "Левостороннее / правостороннее управление"],
     images: ["img/th201a-main.jpg", "img/th201a-alt1.jpg", "img/th201a-alt2.jpg"],
-    price: 82000,
+    price: 164000,
     catalogPage: 25
   },
   {
@@ -546,7 +546,7 @@ const PRODUCTS = [
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Апгрейд мотора до 350W", "Козырёк от солнца", "Подставка для ног", "Левостороннее / правостороннее управление", "Подвесное сиденье для сопровождающего"],
     images: ["img/th201k-main.jpg", "img/th201k-alt1.jpg", "img/th201k-alt2.jpg"],
-    price: 89000,
+    price: 178000,
     catalogPage: 26
   },
   {
@@ -578,7 +578,7 @@ const PRODUCTS = [
     },
     options: ["Апгрейд до двух моторов 250W", "Два стиля колёс", "Ручной подъём ног", "Задняя корзина", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Левостороннее / правостороннее управление", "Подставка для ног", "Ручка-акселератор"],
     images: ["img/th109-108-main.jpg", "img/th109-108-alt1.jpg", "img/th109-108-alt2.jpg"],
-    price: 79000,
+    price: 158000,
     catalogPage: 28
   },
   {
@@ -610,7 +610,7 @@ const PRODUCTS = [
     },
     options: ["Задняя корзина", "Козырёк от солнца", "Ручка-акселератор", "Подвесное сиденье для сопровождающего"],
     images: ["img/th101-main.jpg", "img/th101-alt1.jpg", "img/th101-alt2.jpg"],
-    price: 89000,
+    price: 178000,
     catalogPage: 29
   },
   {
@@ -642,7 +642,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-little-bee-main.jpg", "img/rehab-little-bee-alt1.jpg", "img/rehab-little-bee-alt2.jpg"],
-    price: 145000,
+    price: 290000,
     catalogPage: 34
   },
 
@@ -665,7 +665,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/fs129f1-main.jpg", "img/fs129f1-alt1.jpg"],
-    price: 289500,
+    price: 579000,
     catalogPage: 27
   },
   {
@@ -695,7 +695,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/healthbless-k2-main.jpg", "img/healthbless-k2-alt1.jpg", "img/healthbless-k2-alt2.jpg"],
-    price: 149000,
+    price: 298000,
     catalogPage: 19
   },
   {
@@ -729,7 +729,7 @@ const PRODUCTS = [
     },
     options: ["Кастомизация размера сиденья и спинки", "Кастомизация высоты педалей", "Беспроводной пульт", "Голосовое управление", "Козырёк от солнца"],
     images: ["img/future-q1-rear-main.jpg", "img/future-q1-rear-alt1.jpg", "img/future-q1-rear-alt2.jpg"],
-    price: 265000,
+    price: 530000,
     catalogPage: 10
   },
   {
@@ -764,7 +764,7 @@ const PRODUCTS = [
     },
     options: ["Кастомизация размера сиденья и спинки", "Кастомизация высоты педалей", "Подставка для ног", "Беспроводной пульт", "Голосовое управление", "Козырёк от солнца"],
     images: ["img/future-q1-front-main.jpg", "img/future-q1-front-alt1.jpg", "img/future-q1-front-alt2.jpg"],
-    price: 259000,
+    price: 518000,
     catalogPage: 11
   },
   {
@@ -798,7 +798,7 @@ const PRODUCTS = [
     },
     options: ["Кастомизация размера сиденья и спинки", "Кастомизация высоты педалей", "Беспроводной пульт", "Голосовое управление", "Козырёк от солнца", "Апгрейд моторов"],
     images: ["img/th301-standing-main.jpg", "img/th301-standing-alt1.jpg", "img/th301-standing-alt2.jpg"],
-    price: 299000,
+    price: 598000,
     catalogPage: 12
   },
   {
@@ -828,7 +828,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/fullback-h1-main.jpg", "img/fullback-h1-alt1.jpg", "img/fullback-h1-alt2.jpg"],
-    price: 135000,
+    price: 270000,
     catalogPage: 13
   },
   {
@@ -860,7 +860,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/fullback-h2-main.jpg", "img/fullback-h2-alt1.jpg"],
-    price: 195000,
+    price: 390000,
     catalogPage: 14
   },
   {
@@ -892,7 +892,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/fullback-h3-main.jpg", "img/fullback-h3-alt1.jpg"],
-    price: 209000,
+    price: 418000,
     catalogPage: 14
   },
   {
@@ -924,7 +924,7 @@ const PRODUCTS = [
     },
     options: ["Беспроводной пульт", "Козырёк от солнца", "Кастомизация размера сиденья", "Голосовое управление", "Сиденья для сопровождающих", "Мягкие наколенники (опция, жёсткие — стандарт)"],
     images: ["img/fullback-h4-main.jpg", "img/fullback-h4-alt1.jpg", "img/fullback-h4-alt2.jpg"],
-    price: 245000,
+    price: 490000,
     catalogPage: 15
   },
   {
@@ -950,7 +950,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/blackhawks-h1-main.jpg", "img/blackhawks-h1-alt1.jpg", "img/blackhawks-h1-alt2.jpg"],
-    price: 79000,
+    price: 158000,
     catalogPage: 16
   },
   {
@@ -984,7 +984,7 @@ const PRODUCTS = [
     },
     options: ["Модель с высокой электрической спинкой", "Подставка для ног", "14\" пневматические задние колёса", "Сиденье для сопровождающего", "Левостороннее / заднее управление", "Козырёк от солнца"],
     images: ["img/blackhawks-h2-main.jpg", "img/blackhawks-h2-alt1.jpg", "img/blackhawks-h2-alt2.jpg"],
-    price: 175000,
+    price: 350000,
     catalogPage: 17
   },
 
@@ -1014,7 +1014,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/healthbless-k1-main.jpg", "img/healthbless-k1-alt1.jpg", "img/healthbless-k1-alt2.jpg"],
-    price: 89000,
+    price: 178000,
     catalogPage: 18
   },
   {
@@ -1037,7 +1037,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-frame-manual-main.jpg", "img/rehab-frame-manual-alt1.jpg", "img/rehab-frame-manual-alt2.jpg"],
-    price: 45000,
+    price: 90000,
     catalogPage: 30
   },
   {
@@ -1061,7 +1061,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-frame-pneumatic-main.jpg", "img/rehab-frame-pneumatic-alt1.jpg", "img/rehab-frame-pneumatic-alt2.jpg"],
-    price: 55000,
+    price: 110000,
     catalogPage: 31
   },
   {
@@ -1086,7 +1086,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-frame-walking-main.jpg", "img/rehab-frame-walking-alt1.jpg", "img/rehab-frame-walking-alt2.jpg"],
-    price: 65000,
+    price: 130000,
     catalogPage: 32
   },
   {
@@ -1111,7 +1111,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-frame-electric-main.jpg", "img/rehab-frame-electric-alt1.jpg", "img/rehab-frame-electric-alt2.jpg"],
-    price: 85000,
+    price: 170000,
     catalogPage: 33
   },
   {
@@ -1138,7 +1138,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-walker-main.jpg", "img/rehab-walker-alt1.jpg", "img/rehab-walker-alt2.jpg"],
-    price: 55000,
+    price: 110000,
     catalogPage: 35
   },
   {
@@ -1167,7 +1167,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-electric-walker-main.jpg", "img/rehab-electric-walker-alt1.jpg", "img/rehab-electric-walker-alt2.jpg"],
-    price: 75000,
+    price: 150000,
     catalogPage: 36
   },
   {
@@ -1193,7 +1193,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/rehab-walking-aid-main.jpg", "img/rehab-walking-aid-alt1.jpg", "img/rehab-walking-aid-alt2.jpg"],
-    price: 49000,
+    price: 98000,
     catalogPage: 37
   },
   {
@@ -1215,7 +1215,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/lifter-small-main.jpg", "img/lifter-small-alt1.jpg", "img/lifter-small-alt2.jpg"],
-    price: 39000,
+    price: 78000,
     catalogPage: 38
   },
   {
@@ -1237,7 +1237,7 @@ const PRODUCTS = [
     },
     options: [],
     images: ["img/lifter-large-main.jpg", "img/lifter-large-alt1.jpg", "img/lifter-large-alt2.jpg"],
-    price: 45000,
+    price: 90000,
     catalogPage: 39
   },
   {
@@ -1258,7 +1258,7 @@ const PRODUCTS = [
     },
     options: ["Мягкое кольцо с крышкой", "Воронкообразный туалет", "Без функции обмыва"],
     images: ["img/sanitary-main.jpg", "img/sanitary-alt1.jpg", "img/sanitary-alt2.jpg"],
-    price: 25000,
+    price: 50000,
     catalogPage: 40
   }
 ];
