@@ -473,15 +473,24 @@ button { cursor: pointer; font-family: inherit; }
 .footer a:hover { opacity: 1; color: var(--accent); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; text-align: center; font-size: 0.75rem; opacity: 0.4; }
 
-/* ===== TELEGRAM FLOAT ===== */
-.telegram-float {
+/* ===== SITE STICKY BAR (global contact buttons) ===== */
+.site-sticky-bar {
   position: fixed; bottom: 16px; right: 16px; z-index: 999;
-  width: 50px; height: 50px; border-radius: 50%; background: #0088cc;
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 16px rgba(0,136,204,0.4); transition: transform var(--transition);
+  display: flex; flex-direction: column; gap: 10px;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.telegram-float:hover { transform: scale(1.1); }
-.telegram-float svg { width: 24px; height: 24px; fill: #fff; }
+.site-sticky-bar.visible { opacity: 1; transform: translateY(0); }
+.site-sticky-bar .sticky-btn {
+  width: 48px; height: 48px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.site-sticky-bar .sticky-btn:hover { transform: scale(1.12); }
+.site-sticky-bar .sticky-btn-call { background: var(--accent); }
+.site-sticky-bar .sticky-btn-tg { background: #0088cc; }
+.site-sticky-bar .sticky-btn-wa { background: #25d366; }
 
 /* ===== MODAL ===== */
 .modal-overlay {
@@ -608,9 +617,9 @@ button { cursor: pointer; font-family: inherit; }
   .cta-section h2 { font-size: 1.8rem; }
   .page-header h1 { font-size: 2.2rem; }
 
-  .telegram-float { width: 54px; height: 54px; bottom: 20px; right: 20px; }
-  .telegram-float svg { width: 26px; height: 26px; }
-  .scroll-top { bottom: 82px; right: 20px; }
+  .site-sticky-bar { bottom: 20px; right: 20px; }
+  .site-sticky-bar .sticky-btn { width: 52px; height: 52px; }
+  .scroll-top { bottom: 20px; right: 82px; }
 }
 
 @media (min-width: 1200px) {
