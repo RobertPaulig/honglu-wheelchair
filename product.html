@@ -26,56 +26,53 @@
   </header>
 
   <section class="product-page" id="product-content">
-    <!-- Carousel - full width on mobile -->
-    <div class="product-gallery">
-      <div class="carousel">
-        <div class="carousel-track" id="carousel-track"></div>
-        <button class="carousel-nav carousel-prev" id="carousel-prev">&#8249;</button>
-        <button class="carousel-nav carousel-next" id="carousel-next">&#8250;</button>
-        <div class="carousel-counter" id="carousel-counter">1 / 1</div>
+    <div class="product-top">
+      <!-- Carousel - full width on mobile -->
+      <div class="product-gallery">
+        <div class="carousel">
+          <div class="carousel-track" id="carousel-track"></div>
+          <button class="carousel-nav carousel-prev" id="carousel-prev">&#8249;</button>
+          <button class="carousel-nav carousel-next" id="carousel-next">&#8250;</button>
+          <div class="carousel-counter" id="carousel-counter">1 / 1</div>
+        </div>
+        <div class="carousel-thumbs" id="carousel-thumbs"></div>
       </div>
-      <div class="carousel-thumbs" id="carousel-thumbs"></div>
-    </div>
 
-    <!-- Main info block -->
-    <div class="product-main">
-      <div class="container">
-        <a href="#" class="product-cat-badge" id="product-cat-link">Категория</a>
-        <h1 id="product-name" class="product-title">Модель</h1>
+      <!-- Right column on desktop -->
+      <div class="product-info-col">
+        <!-- Main info block -->
+        <div class="product-main">
+          <a href="#" class="product-cat-badge" id="product-cat-link">Категория</a>
+          <h1 id="product-name" class="product-title">Модель</h1>
 
-        <div class="product-price-row">
-          <div class="product-price" id="product-price">0 &#8381;</div>
-          <div class="product-price-hint">ориентировочная цена</div>
+          <div class="product-price-row">
+            <div class="product-price" id="product-price">0 &#8381;</div>
+            <div class="product-price-hint">ориентировочная цена</div>
+          </div>
+
+          <!-- Quick specs badges -->
+          <div class="product-quick-specs" id="product-quick-specs"></div>
+
+          <p class="product-desc" id="product-desc"></p>
         </div>
 
-        <!-- Quick specs badges -->
-        <div class="product-quick-specs" id="product-quick-specs"></div>
+        <!-- Features -->
+        <div class="product-section" id="product-features-section">
+          <h2 class="product-section-title">Особенности</h2>
+          <div class="product-features-grid" id="product-features"></div>
+        </div>
 
-        <p class="product-desc" id="product-desc"></p>
-      </div>
-    </div>
+        <!-- Specs table -->
+        <div class="product-section product-section-alt">
+          <h2 class="product-section-title">Характеристики</h2>
+          <table class="specs-table"><tbody id="product-specs"></tbody></table>
+        </div>
 
-    <!-- Features -->
-    <div class="product-section" id="product-features-section">
-      <div class="container">
-        <h2 class="product-section-title">Особенности</h2>
-        <div class="product-features-grid" id="product-features"></div>
-      </div>
-    </div>
-
-    <!-- Specs table -->
-    <div class="product-section product-section-alt">
-      <div class="container">
-        <h2 class="product-section-title">Характеристики</h2>
-        <table class="specs-table"><tbody id="product-specs"></tbody></table>
-      </div>
-    </div>
-
-    <!-- Options -->
-    <div class="product-section" id="product-options-section">
-      <div class="container">
-        <h2 class="product-section-title">Доступные опции</h2>
-        <div class="options-list" id="product-options"></div>
+        <!-- Options -->
+        <div class="product-section" id="product-options-section">
+          <h2 class="product-section-title">Доступные опции</h2>
+          <div class="options-list" id="product-options"></div>
+        </div>
       </div>
     </div>
 
