@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderHome() {
   const grid = document.getElementById("popular-products");
   if (!grid) return;
-  const popular = ["king-kong-600w", "cloudrise", "th201", "future-q1-rear", "fullback-h4", "little-bee", "blackhawks-h2", "th101"];
+  const popular = ["king-kong-600w", "cloudrise", "th201", "future-q1-rear", "fullback-h4", "rehab-little-bee", "blackhawks-h2", "th101"];
   popular.forEach(id => {
     const p = getProductById(id);
     if (p) grid.innerHTML += productCard(p);
