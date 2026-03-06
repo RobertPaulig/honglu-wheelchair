@@ -97,16 +97,14 @@ function renderProduct() {
   const params = new URLSearchParams(window.location.search);
   const productId = params.get("id");
   const p = getProductById(productId);
-  if (!p) { document.getElementById("product-content").innerHTML = "<p style='padding:40px;text-align:center;'>Товар не найден</p>"; return; }
+  if (!p) { document.getElementById("product-content").innerHTML = "<p style='padding:100px 40px;text-align:center;font-size:1.1rem;color:#5a6275;'>Товар не найден</p>"; return; }
 
   const cat = getCategoryById(p.category);
-  document.title = p.name + " — Taihe Wheelchair";
+  document.title = p.name + " — купить | Taihe Wheelchair";
 
-  // Breadcrumb
-  const bcCat = document.getElementById("breadcrumb-cat");
-  const bcProduct = document.getElementById("breadcrumb-product");
-  if (bcCat && cat) { bcCat.href = "category.html?cat=" + cat.id; bcCat.textContent = cat.name; }
-  if (bcProduct) bcProduct.textContent = p.name;
+  // Meta description
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.content = p.shortDesc + ". Цена " + formatPrice(p.price) + ". Доставка по РФ, гарантия 12 мес.";
 
   // Category link
   const catLink = document.getElementById("product-cat-link");
@@ -115,17 +113,43 @@ function renderProduct() {
   // Carousel
   initCarousel(p.images, p.name);
 
-  // Info
+  // Basic info
   document.getElementById("product-name").textContent = p.name;
   document.getElementById("product-price").textContent = formatPrice(p.price);
   document.getElementById("product-desc").textContent = p.description;
 
+  // Sticky bar price
+  const stickyPrice = document.getElementById("sticky-price");
+  if (stickyPrice) stickyPrice.textContent = formatPrice(p.price);
+
+  // Quick specs badges
+  const quickSpecs = document.getElementById("product-quick-specs");
+  if (quickSpecs) {
+    const badges = [];
+    const weight = p.specs["Вес с АКБ"] || p.specs["Вес без АКБ"] || p.specs["Вес"] || "";
+    const speed = p.specs["Макс. скорость"] || "";
+    const range = p.specs["Запас хода"] || "";
+    const motor = p.specs["Мотор"] || p.specs["Двигатель"] || "";
+    const load = p.specs["Макс. нагрузка"] || p.specs["Грузоподъёмность"] || "";
+    if (weight) badges.push({icon: "&#9878;", label: "Вес", value: weight});
+    if (speed) badges.push({icon: "&#9889;", label: "Скорость", value: speed});
+    if (range) badges.push({icon: "&#128267;", label: "Запас хода", value: range});
+    if (motor) badges.push({icon: "&#9881;", label: "Мотор", value: motor});
+    if (load) badges.push({icon: "&#128170;", label: "Нагрузка", value: load});
+    badges.forEach(b => {
+      quickSpecs.innerHTML += `<div class="quick-spec"><div class="quick-spec-value">${b.value}</div><div class="quick-spec-label">${b.label}</div></div>`;
+    });
+  }
+
   // Features
   const featList = document.getElementById("product-features");
-  if (featList) {
+  const featSection = document.getElementById("product-features-section");
+  if (featList && p.features.length > 0) {
     p.features.forEach(f => {
       featList.innerHTML += `<div class="feature-item"><div class="feature-check">&#10003;</div><span>${f}</span></div>`;
     });
+  } else if (featSection) {
+    featSection.style.display = "none";
   }
 
   // Specs
@@ -150,6 +174,9 @@ function renderProduct() {
   // Model in form
   const modelInput = document.getElementById("request-model");
   if (modelInput) modelInput.value = p.name;
+
+  // Show sticky bar
+  document.querySelector(".product-sticky-bar").classList.add("visible");
 }
 
 // ===== CAROUSEL =====
@@ -201,9 +228,15 @@ function initCarousel(images, altText) {
     });
   }
 
+  // Counter
+  const counterEl = document.getElementById("carousel-counter");
+  if (counterEl) counterEl.textContent = `1 / ${validImages.length}`;
+
   function goTo(index) {
     current = Math.max(0, Math.min(index, validImages.length - 1));
     track.style.transform = `translateX(-${current * 100}%)`;
+    // Update counter
+    if (counterEl) counterEl.textContent = `${current + 1} / ${validImages.length}`;
     // Update dots
     if (dotsWrap) {
       dotsWrap.querySelectorAll(".carousel-dot").forEach((d, i) => d.classList.toggle("active", i === current));
