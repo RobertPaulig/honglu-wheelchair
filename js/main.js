@@ -51,6 +51,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ===== HOME =====
 function renderHome() {
+  // Render 4 product lines
+  const linesGrid = document.getElementById("home-lines");
+  if (linesGrid) {
+    const icons = { terra: "&#127757;", vista: "&#127968;", nexus: "&#128188;", delta: "&#9764;" };
+    CATEGORIES.forEach(cat => {
+      const count = getProductsByCategory(cat.id).length;
+      const products = getProductsByCategory(cat.id);
+      const priceFrom = Math.min(...products.map(p => p.price));
+      linesGrid.innerHTML += `
+        <a href="category.html?cat=${cat.id}" class="line-card">
+          <div class="line-card-img-wrap">
+            <img src="${cat.img}" alt="${cat.name}" onerror="this.src='img/hero-banner.jpg'">
+          </div>
+          <div class="line-card-body">
+            <div class="line-card-icon">${icons[cat.id] || ""}</div>
+            <h3 class="line-card-title">${cat.name}</h3>
+            <p class="line-card-desc">${cat.desc}</p>
+            <div class="line-card-meta">
+              <span class="line-card-count">${count} моделей</span>
+              <span class="line-card-price">от ${formatPrice(priceFrom)}</span>
+            </div>
+          </div>
+          <div class="line-card-arrow">&rarr;</div>
+        </a>`;
+    });
+  }
+
+  // Render popular products
   const grid = document.getElementById("popular-products");
   if (!grid) return;
   const popular = ["king-kong-600w", "cloudrise", "th201", "future-q1-rear", "fullback-h4", "rehab-little-bee", "blackhawks-h2", "th101"];
