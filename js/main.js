@@ -298,7 +298,9 @@ function productCard(p) {
   const weight = p.specs["Вес с АКБ"] || p.specs["Вес без АКБ"] || p.specs["Вес"] || "";
   const speed = p.specs["Макс. скорость"] || "";
   const range = p.specs["Запас хода"] || "";
-  const motor = p.specs["Мотор"] || p.specs["Двигатель"] || "";
+  let motor = p.specs["Мотор"] || p.specs["Двигатель"] || "";
+  // Shorten motor text for card tags
+  motor = motor.replace(/\s*\(.*?\)/g, "").trim();
 
   let tagsHtml = "";
   if (motor) tagsHtml += `<span class="card-tag">${motor}</span>`;
