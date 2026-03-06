@@ -117,7 +117,7 @@ function renderCategory() {
 
   document.getElementById("category-title").textContent = cat.name;
   document.getElementById("category-desc").textContent = cat.desc;
-  document.title = cat.name + " — Taihe Wheelchair";
+  document.title = cat.name + " — СИ-ВАН";
   const bc = document.getElementById("breadcrumb-cat");
   if (bc) bc.textContent = cat.name;
 
@@ -133,7 +133,7 @@ function renderProduct() {
   if (!p) { document.getElementById("product-content").innerHTML = "<p style='padding:100px 40px;text-align:center;font-size:1.1rem;color:#5a6275;'>Товар не найден</p>"; return; }
 
   const cat = getCategoryById(p.category);
-  document.title = p.name + " — купить | Taihe Wheelchair";
+  document.title = p.name + " — купить | СИ-ВАН";
 
   // Meta description
   const metaDesc = document.querySelector('meta[name="description"]');
