@@ -290,31 +290,29 @@ function initCarousel(images, altText) {
 
 // ===== HELPERS =====
 function productCard(p) {
-  // Pick quick specs for card
   const weight = p.specs["Вес с АКБ"] || p.specs["Вес без АКБ"] || p.specs["Вес"] || "";
   const speed = p.specs["Макс. скорость"] || "";
   const range = p.specs["Запас хода"] || "";
+  const motor = p.specs["Мотор"] || p.specs["Двигатель"] || "";
 
-  let specsHtml = "";
-  if (weight) specsHtml += `<span class="product-card-spec">Вес: ${weight}</span>`;
-  if (speed) specsHtml += `<span class="product-card-spec">${speed}</span>`;
-  if (range) specsHtml += `<span class="product-card-spec">${range}</span>`;
+  let tagsHtml = "";
+  if (motor) tagsHtml += `<span class="card-tag">${motor}</span>`;
+  if (speed) tagsHtml += `<span class="card-tag">${speed}</span>`;
+  if (range) tagsHtml += `<span class="card-tag">${range}</span>`;
+  if (weight) tagsHtml += `<span class="card-tag">${weight}</span>`;
 
   return `
-    <div class="product-card">
+    <a href="product.html?id=${p.id}" class="product-card">
       <div class="product-card-img-wrap">
-        <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='img/hero-banner.jpg'">
+        <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" loading="lazy" onerror="this.src='img/hero-banner.jpg'">
       </div>
       <div class="product-card-body">
-        <h3>${p.name}</h3>
+        <div class="product-card-price">${formatPrice(p.price)}</div>
+        <h3 class="product-card-name">${p.name}</h3>
         <p class="product-card-desc">${p.shortDesc}</p>
-        <div class="product-card-specs">${specsHtml || '<span class="product-card-spec">&nbsp;</span>'}</div>
-        <div class="product-card-bottom">
-          <div class="product-card-price">${formatPrice(p.price)}</div>
-          <a href="product.html?id=${p.id}" class="btn btn-accent btn-sm">Подробнее</a>
-        </div>
+        <div class="product-card-tags">${tagsHtml}</div>
       </div>
-    </div>`;
+    </a>`;
 }
 
 function pluralize(n, one, few, many) {
