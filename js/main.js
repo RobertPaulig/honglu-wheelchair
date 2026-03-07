@@ -225,7 +225,7 @@ function initCarousel(images, altText) {
   const thumbsWrap = document.getElementById("carousel-thumbs");
   if (!track) return;
 
-  const validImages = images.filter(Boolean).map(s => s.replace(/\.jpg$/, '.png'));
+  const validImages = images.filter(Boolean).map(s => s.replace('img/', 'img/products/').replace(/\.jpg$/, '.png'));
   if (validImages.length === 0) return;
 
   let current = 0;
@@ -345,7 +345,7 @@ function productCard(p) {
   if (!motor && load) specsHtml += `<div class="card-spec"><span class="card-spec-icon">&#9878;</span><span class="card-spec-val">${load}</span><span class="card-spec-label">нагрузка</span></div>`;
 
   // Use .png image
-  const imgSrc = p.images[0].replace(/\.jpg$/, '.png');
+  const imgSrc = p.images[0].replace('img/', 'img/products/').replace(/\.jpg$/, '.png');
 
   return `
     <a href="product.html?id=${p.id}" class="product-card">

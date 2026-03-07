@@ -1,8 +1,8 @@
 const CATEGORIES = [
-  { id: "terra", name: "TERRA — Улица и мобильность", desc: "Мощные кресла с электроприводом для улицы, города и бездорожья", img: "img/king-kong-600w-main.png" },
-  { id: "vista", name: "VISTA — Дом и комфорт", desc: "Компактные и складные кресла для дома, квартиры и повседневных задач", img: "img/cloudrise-main.png" },
-  { id: "nexus", name: "NEXUS — Работа и социализация", desc: "Премиальные кресла с вертикализацией для активной жизни и работы", img: "img/future-q1-rear-main.png" },
-  { id: "delta", name: "DELTA — Реабилитация и ассистивные технологии", desc: "Вертикализаторы, тренажёры ходьбы, подъёмники и санитарное оборудование", img: "img/lifter-large-main.png" }
+  { id: "terra", name: "TERRA — Улица и мобильность", desc: "Мощные кресла с электроприводом для улицы, города и бездорожья", img: "img/products/king-kong-600w-main.png" },
+  { id: "vista", name: "VISTA — Дом и комфорт", desc: "Компактные и складные кресла для дома, квартиры и повседневных задач", img: "img/products/cloudrise-main.png" },
+  { id: "nexus", name: "NEXUS — Работа и социализация", desc: "Премиальные кресла с вертикализацией для активной жизни и работы", img: "img/products/future-q1-rear-main.png" },
+  { id: "delta", name: "DELTA — Реабилитация и ассистивные технологии", desc: "Вертикализаторы, тренажёры ходьбы, подъёмники и санитарное оборудование", img: "img/products/lifter-large-main.png" }
 ];
 
 const PRODUCTS = [
