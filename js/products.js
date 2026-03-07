@@ -664,7 +664,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/fs129f1-main.jpg", "img/fs129f1-alt1.jpg"],
+    images: ["img/fs129f1-main.jpg", "img/fs129f1-alt1.jpg", "img/fs129f1-alt1.jpg"],
     price: 579000,
     catalogPage: 27
   },
@@ -859,7 +859,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/fullback-h2-main.jpg", "img/fullback-h2-alt1.jpg"],
+    images: ["img/fullback-h2-main.jpg", "img/fullback-h2-alt1.jpg", "img/fullback-h2-alt2.jpg"],
     price: 390000,
     catalogPage: 14
   },
@@ -891,7 +891,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/fullback-h3-main.jpg", "img/fullback-h3-alt1.jpg"],
+    images: ["img/fullback-h3-main.jpg", "img/fullback-h3-alt1.jpg", "img/fullback-h3-alt2.jpg"],
     price: 418000,
     catalogPage: 14
   },
