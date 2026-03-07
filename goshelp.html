@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Государственная помощь — СИ-ВАН</title>
+  <meta name="description" content="Как получить электрическую инвалидную коляску бесплатно от государства. ИПРА, электронный сертификат, компенсация ФСС. Пошаговая инструкция.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .law-page { max-width: 800px; margin: 0 auto; }
+    .law-page h2 { font-size: 1.4rem; font-weight: 800; color: var(--primary); margin: 40px 0 16px; line-height: 1.3; }
+    .law-page h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 28px 0 12px; }
+    .law-page p { font-size: 0.95rem; line-height: 1.7; color: var(--text-main); margin-bottom: 14px; }
+    .law-page ul, .law-page ol { margin: 0 0 18px 20px; font-size: 0.95rem; line-height: 1.7; color: var(--text-main); }
+    .law-page li { margin-bottom: 8px; }
+
+    .law-card {
+      background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius);
+      padding: 20px 24px; margin: 20px 0;
+    }
+    .law-card--accent { border-left: 4px solid var(--accent); }
+    .law-card--warning { border-left: 4px solid #e67e22; background: #fef9f0; }
+    .law-card--blue { border-left: 4px solid #2980b9; background: #f0f7fd; }
+    .law-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+    .law-card p { margin-bottom: 8px; }
+    .law-card p:last-child { margin-bottom: 0; }
+
+    .law-ref {
+      display: inline-block; background: var(--bg-soft); padding: 2px 8px; border-radius: 4px;
+      font-size: 0.82rem; font-weight: 600; color: var(--primary); text-decoration: none;
+      border: 1px solid var(--border-light); transition: all 0.2s;
+    }
+    .law-ref:hover { background: var(--primary); color: #fff; }
+
+    .steps { counter-reset: step; list-style: none; margin-left: 0; padding: 0; }
+    .steps li {
+      counter-increment: step; position: relative; padding-left: 52px; margin-bottom: 24px;
+      min-height: 40px; display: flex; flex-direction: column; justify-content: center;
+    }
+    .steps li::before {
+      content: counter(step); position: absolute; left: 0; top: 0;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--accent); color: #fff; font-weight: 800; font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .steps li strong { display: block; font-size: 1rem; margin-bottom: 4px; }
+
+    .methods-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 20px 0; }
+    @media (min-width: 600px) { .methods-grid { grid-template-columns: 1fr 1fr; } }
+    .method-card {
+      background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius);
+      padding: 20px; text-align: center;
+    }
+    .method-card-icon { font-size: 2rem; margin-bottom: 10px; }
+    .method-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+    .method-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+
+    .docs-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+    .docs-table th, .docs-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border-light); }
+    .docs-table th { background: var(--bg-soft); font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .docs-table td { color: var(--text-main); }
+
+    .tsr-codes { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 16px 0; }
+    @media (min-width: 600px) { .tsr-codes { grid-template-columns: 1fr 1fr; } }
+    .tsr-code {
+      background: var(--bg-soft); border-radius: 8px; padding: 14px 18px;
+    }
+    .tsr-code-num { font-size: 0.8rem; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+    .tsr-code-name { font-size: 0.9rem; font-weight: 600; color: var(--primary); }
+
+    .faq-item { border-bottom: 1px solid var(--border-light); padding: 16px 0; }
+    .faq-q { font-weight: 700; font-size: 0.95rem; color: var(--primary); margin-bottom: 8px; }
+    .faq-a { font-size: 0.9rem; color: var(--text-main); line-height: 1.6; }
+  </style>
+</head>
+<body data-page="goshelp">
+  <header class="header"><div class="container"><a href="index.html" class="logo"><div class="logo-icon">&#9854;</div>СИ-ВАН <span>официальный поставщик Honglu</span></a><nav class="nav"><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="goshelp.html" class="active">Госпомощь</a><a href="about.html">О компании</a><a href="contacts.html">Контакты</a></nav><a href="tel:+79214052244" class="header-phone">+7 (921) 405-22-44</a><button class="burger" aria-label="Меню"><span></span><span></span><span></span></button></div></header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Государственная помощь при покупке электрокресла</h1>
+      <p>Как получить электрическую инвалидную коляску бесплатно или с компенсацией от государства</p>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="law-page">
+
+        <div class="law-card law-card--warning">
+          <h4>Важно: изменения с 1 января 2025 года</h4>
+          <p>С 1 января 2025 года <strong>денежная компенсация за самостоятельно купленные ТСР отменена</strong>. Теперь доступны только два способа: получение через Социальный фонд (натуральная форма) или оформление <strong>электронного сертификата</strong>.</p>
+          <p>Компенсация сохраняется только для ТСР, приобретённых <strong>до 1 января 2025 года</strong>.</p>
+        </div>
+
+        <h2>Правовая база</h2>
+        <p>Право инвалидов на бесплатное обеспечение техническими средствами реабилитации (ТСР) закреплено на федеральном уровне:</p>
+
+        <ul>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_8559/" target="_blank" class="law-ref">ФЗ №181-ФЗ от 24.11.1995</a> — «О социальной защите инвалидов в Российской Федерации». Статья 11.1 определяет ТСР и порядок их предоставления.</li>
+          <li><a href="https://normativ.kontur.ru/document?amp=&documentId=443846&moduleId=1" target="_blank" class="law-ref">Распоряжение Правительства №2347-р от 30.12.2005</a> — Федеральный перечень ТСР, включая кресла-коляски с электроприводом.</li>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_76051/" target="_blank" class="law-ref">Постановление Правительства №240 от 07.04.2008</a> — Порядок обеспечения инвалидов ТСР, правила компенсации.</li>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_293237/" target="_blank" class="law-ref">Приказ Минтруда №86н от 13.02.2018</a> — Классификация ТСР в рамках федерального перечня (коды изделий).</li>
+        </ul>
+
+        <h2>Какие изделия можно получить бесплатно</h2>
+        <p>Электрические кресла-коляски входят в Федеральный перечень ТСР. Коды классификации по приказу Минтруда №86н:</p>
+
+        <div class="tsr-codes">
+          <div class="tsr-code">
+            <div class="tsr-code-num">07-04-01</div>
+            <div class="tsr-code-name">Кресло-коляска с электроприводом</div>
+          </div>
+          <div class="tsr-code">
+            <div class="tsr-code-num">07-04-02</div>
+            <div class="tsr-code-name">Кресло-коляска с электроприводом с доп. фиксацией</div>
+          </div>
+        </div>
+
+        <p>Это значит, что <strong>все наши электрокресла линеек TERRA, VISTA, NEXUS</strong> подходят под государственное обеспечение. Также в перечень входят вертикализаторы, ходунки и подъёмники (линейка DELTA).</p>
+
+        <h2>Два способа получения в 2025–2026 году</h2>
+
+        <div class="methods-grid">
+          <div class="method-card">
+            <div class="method-card-icon">&#128179;</div>
+            <h4>Электронный сертификат</h4>
+            <p>Сумма резервируется на карте МИР. Вы сами выбираете модель и покупаете в магазине, подключённом к системе. Если кресло дороже суммы сертификата — доплачиваете разницу.</p>
+          </div>
+          <div class="method-card">
+            <div class="method-card-icon">&#127963;</div>
+            <h4>Натуральная форма</h4>
+            <p>Социальный фонд сам закупает ТСР через госзакупки и выдаёт вам. Выбрать конкретную модель нельзя — дадут то, что закупили.</p>
+          </div>
+        </div>
+
+        <div class="law-card law-card--blue">
+          <h4>Рекомендация</h4>
+          <p>Электронный сертификат — лучший вариант. Вы сами выбираете модель, которая подходит именно вам, а не получаете «что дадут». Даже если сумма сертификата покрывает не 100% стоимости, разницу можно доплатить.</p>
+        </div>
+
+        <h2>Пошаговая инструкция</h2>
+
+        <ol class="steps">
+          <li>
+            <strong>Пройдите медико-социальную экспертизу (МСЭ)</strong>
+            Обратитесь к лечащему врачу за направлением на МСЭ. Комиссия определит группу инвалидности и составит Индивидуальную программу реабилитации и абилитации (ИПРА). В ИПРА должна быть запись о необходимости кресла-коляски с электроприводом.
+          </li>
+          <li>
+            <strong>Подайте заявление в Социальный фонд России (СФР)</strong>
+            С ИПРА обратитесь в региональное отделение СФР. Можно подать лично, через МФЦ или через <a href="https://www.gosuslugi.ru/" target="_blank">портал Госуслуг</a>. Укажите способ обеспечения — электронный сертификат или натуральная форма.
+          </li>
+          <li>
+            <strong>Получите электронный сертификат</strong>
+            Сертификат привязывается к вашей карте МИР. Сумма определяется по последней закупочной цене ТСР вашего типа в вашем регионе. Узнать сумму можно на <a href="https://ktsr.sfr.gov.ru/ru-RU/service/compensation" target="_blank">сайте СФР</a>.
+          </li>
+          <li>
+            <strong>Выберите кресло и купите</strong>
+            Выберите подходящую модель в нашем каталоге. Оплатите картой МИР с привязанным сертификатом. Если стоимость кресла выше суммы сертификата — доплатите разницу любым способом.
+          </li>
+          <li>
+            <strong>Получите кресло</strong>
+            Мы доставим кресло в любой город России. Срок доставки 25–40 дней от завода Honglu.
+          </li>
+        </ol>
+
+        <h2>Необходимые документы</h2>
+
+        <table class="docs-table">
+          <thead>
+            <tr><th>Документ</th><th>Где получить</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Паспорт гражданина РФ</td><td>—</td></tr>
+            <tr><td>СНИЛС</td><td>—</td></tr>
+            <tr><td>ИПРА (индивидуальная программа реабилитации)</td><td>Бюро МСЭ</td></tr>
+            <tr><td>Карта МИР (для электронного сертификата)</td><td>Любой банк</td></tr>
+            <tr><td>Заявление на обеспечение ТСР</td><td>СФР / Госуслуги / МФЦ</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Сумма электронного сертификата</h2>
+        <p>Размер сертификата = последняя контрактная цена на аналогичное ТСР в вашем регионе по данным госзакупок. Суммы отличаются от региона к региону.</p>
+        <p>Рассчитать сумму для вашего региона: <a href="https://ktsr.sfr.gov.ru/ru-RU/service/compensation" target="_blank" class="law-ref">Калькулятор СФР &rarr;</a></p>
+
+        <div class="law-card law-card--accent">
+          <h4>Пример</h4>
+          <p>Кресло-коляска с электроприводом (код 07-04-01) — средняя сумма сертификата по регионам составляет <strong>от 100 000 до 350 000 ₽</strong>. В некоторых регионах покрывает полную стоимость кресла.</p>
+        </div>
+
+        <h2>Сроки использования ТСР</h2>
+        <p>По закону, срок использования кресла-коляски с электроприводом — <strong>8 лет</strong>. После истечения срока вы имеете право получить новое кресло по той же процедуре.</p>
+
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="faq-item">
+          <div class="faq-q">Могу ли я выбрать конкретную модель кресла?</div>
+          <div class="faq-a">Да, при использовании электронного сертификата вы сами выбираете модель. В ИПРА указывается тип изделия (например, «кресло-коляска с электроприводом»), а не конкретная марка. Любая модель, соответствующая этому типу, подходит.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Что если кресло стоит дороже суммы сертификата?</div>
+          <div class="faq-a">Вы доплачиваете разницу из собственных средств. Например, сертификат на 200 000 ₽, кресло стоит 370 000 ₽ — доплата составит 170 000 ₽.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Можно ли получить компенсацию за уже купленное кресло?</div>
+          <div class="faq-a">С 1 января 2025 года — <strong>нет</strong>. Компенсация за самостоятельно приобретённые ТСР отменена. Если вы купили кресло до 01.01.2025 и не получили компенсацию — обратитесь в СФР, право сохраняется.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Какие документы нужны для ИПРА?</div>
+          <div class="faq-a">Направление на МСЭ от лечащего врача, медицинские документы (выписки, результаты обследований), паспорт, СНИЛС. Врач заполняет направление по форме 088/у.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Сколько ждать получения сертификата?</div>
+          <div class="faq-a">После подачи заявления в СФР — в течение 5 рабочих дней. Сертификат оформляется на карту МИР.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Ваши кресла подходят под электронный сертификат?</div>
+          <div class="faq-a">Да. Все наши электрокресла (TERRA, VISTA, NEXUS) сертифицированы и соответствуют коду 07-04-01 федерального перечня ТСР. Мы поможем с оформлением документов.</div>
+        </div>
+
+        <h2>Полезные ссылки</h2>
+        <ul>
+          <li><a href="https://ktsr.sfr.gov.ru/" target="_blank">ktsr.sfr.gov.ru</a> — Каталог ТСР Социального фонда России (расчёт сертификата, оформление)</li>
+          <li><a href="https://www.gosuslugi.ru/" target="_blank">gosuslugi.ru</a> — Портал Госуслуг (подача заявления на ТСР онлайн)</li>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_8559/" target="_blank">ФЗ №181-ФЗ</a> — Полный текст закона о социальной защите инвалидов</li>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_76051/" target="_blank">Постановление №240</a> — Порядок обеспечения инвалидов ТСР</li>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_293237/" target="_blank">Приказ Минтруда №86н</a> — Классификация ТСР (коды изделий)</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Поможем оформить</h2>
+    <p>Мы подскажем как получить электронный сертификат и подберём модель под вашу ИПРА</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-accent btn-lg" onclick="openRequestModal();return false;">Оставить заявку</a>
+      <a href="https://t.me/Magadancanen" target="_blank" class="btn btn-telegram btn-lg">Telegram</a>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-grid"><div><h4>СИ-ВАН</h4><p>ООО «СИ-ВАН АВТО» — стратегический партнёр завода Honglu в России.</p></div><div><h4>Навигация</h4><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="goshelp.html">Госпомощь</a><a href="about.html">О компании</a><a href="contacts.html">Контакты</a></div><div><h4>Контакты</h4><p>&#128222; +7 (921) 405-22-44</p><p>&#128172; WhatsApp: +7 (921) 405-22-44</p><p>&#9993; info@conecargo.ru</p>
+          <p>&#128205; СПб, пр-кт Юрия Гагарина, 41/28</p></div></div><div class="footer-bottom">&copy; 2026 СИ-ВАН. Все права защищены.</div></div></footer>
+
+  <button class="scroll-top" title="Наверх">&#8593;</button>
+
+  <!-- Request Modal -->
+  <div class="modal-overlay" id="request-modal">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <button class="modal-close" onclick="closeRequestModal()">&times;</button>
+      <h2>Оставить заявку</h2>
+      <form class="request-form">
+        <div class="form-group"><label>Ваше имя *</label><input type="text" name="name" required placeholder="Иван Иванов"></div>
+        <div class="form-group"><label>Телефон *</label><input type="tel" name="phone" required placeholder="+7 (999) 123-45-67"></div>
+        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="example@mail.ru"></div>
+        <div class="form-group"><label>Сообщение</label><textarea name="message" placeholder="Опишите ваши пожелания..."></textarea></div>
+        <button type="submit" class="btn btn-accent btn-block btn-lg">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

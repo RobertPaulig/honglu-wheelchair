@@ -326,26 +326,37 @@ function productCard(p) {
   const weight = p.specs["Вес с АКБ"] || p.specs["Вес без АКБ"] || p.specs["Вес"] || "";
   const speed = p.specs["Макс. скорость"] || "";
   const range = p.specs["Запас хода"] || "";
+  const load = p.specs["Макс. нагрузка"] || p.specs["Грузоподъёмность"] || "";
   let motor = p.specs["Мотор"] || p.specs["Двигатель"] || "";
-  // Shorten motor text for card tags
   motor = motor.replace(/\s*\(.*?\)/g, "").trim();
 
-  let tagsHtml = "";
-  if (motor) tagsHtml += `<span class="card-tag">${motor}</span>`;
-  if (speed) tagsHtml += `<span class="card-tag">${speed}</span>`;
-  if (range) tagsHtml += `<span class="card-tag">${range}</span>`;
-  if (weight) tagsHtml += `<span class="card-tag">${weight}</span>`;
+  // Build specs grid
+  let specsHtml = "";
+  if (motor) specsHtml += `<div class="card-spec"><span class="card-spec-icon">&#9889;</span><span class="card-spec-val">${motor}</span><span class="card-spec-label">мотор</span></div>`;
+  if (speed) specsHtml += `<div class="card-spec"><span class="card-spec-icon">&#8987;</span><span class="card-spec-val">${speed}</span><span class="card-spec-label">скорость</span></div>`;
+  if (range) specsHtml += `<div class="card-spec"><span class="card-spec-icon">&#128267;</span><span class="card-spec-val">${range}</span><span class="card-spec-label">запас</span></div>`;
+  if (!range && weight) specsHtml += `<div class="card-spec"><span class="card-spec-icon">&#9878;</span><span class="card-spec-val">${weight}</span><span class="card-spec-label">вес</span></div>`;
+  if (!motor && load) specsHtml += `<div class="card-spec"><span class="card-spec-icon">&#9878;</span><span class="card-spec-val">${load}</span><span class="card-spec-label">нагрузка</span></div>`;
+
+  // Use .png image
+  const imgSrc = p.images[0].replace(/\.jpg$/, '.png');
 
   return `
     <a href="product.html?id=${p.id}" class="product-card">
       <div class="product-card-img-wrap">
-        <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" loading="lazy" onerror="this.src='img/hero-banner.jpg'">
+        <img src="${imgSrc}" alt="${p.name}" class="product-card-img" loading="lazy" onerror="this.src='img/hero-banner.jpg'">
       </div>
       <div class="product-card-body">
-        <div class="product-card-price">${formatPrice(p.price)}</div>
         <h3 class="product-card-name">${p.name}</h3>
         <p class="product-card-desc">${p.shortDesc}</p>
-        <div class="product-card-tags">${tagsHtml}</div>
+        <div class="product-card-specs">${specsHtml}</div>
+        <div class="product-card-footer">
+          <div>
+            <div class="product-card-price">${formatPrice(p.price)}</div>
+            <div class="product-card-price-hint">от завода</div>
+          </div>
+          <div class="product-card-btn">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div>
+        </div>
       </div>
     </a>`;
 }

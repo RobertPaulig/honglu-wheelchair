@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест карточки v6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #111827;
+      padding: 24px 12px;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    @media (min-width: 480px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+    @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+    @media (min-width: 1100px) { .grid { grid-template-columns: repeat(4, 1fr); gap: 18px; } }
+
+    /* ========================================
+       КАРТОЧКА v6 — Улучшенная инфо-зона
+       ======================================== */
+    .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      background: #1e293b;
+      transition: transform 0.35s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.35s ease;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+    }
+
+    /* --- Картинка --- */
+    .card-visual {
+      position: relative;
+      background: #e8ecf0;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+    .card-visual img {
+      max-width: 88%;
+      max-height: 88%;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
+      transition: transform 0.5s cubic-bezier(0.25,0.8,0.25,1);
+    }
+    .card:hover .card-visual img {
+      transform: scale(1.06) translateY(-4px);
+    }
+
+    /* --- Лейбл линейки --- */
+    .card-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 4px 10px;
+      font-size: 0.6rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .card-label--terra { background: #d35400; }
+    .card-label--vista { background: #2980b9; }
+    .card-label--nexus { background: #8e44ad; }
+    .card-label--delta { background: #27ae60; }
+
+    /* --- Инфо-зона --- */
+    .card-info {
+      padding: 14px 14px 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Название — крупнее, чётче */
+    .card-name {
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #fff;
+      margin-bottom: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Описание — чуть ярче */
+    .card-desc {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.45;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Спеки — иконки + текст, горизонтальная сетка */
+    .card-specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .card-spec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      padding: 8px 4px;
+      background: #1e293b;
+      text-align: center;
+    }
+    .card-spec-icon {
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
+    .card-spec-val {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      white-space: nowrap;
+    }
+    .card-spec-label {
+      font-size: 0.58rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Цена + кнопка */
+    .card-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .card-price {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .card-price-hint {
+      font-size: 0.6rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.35);
+      margin-top: 2px;
+    }
+    .card-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #0f172a;
+      background: #00d2ff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.2s;
+      min-height: 36px;
+    }
+    .card:hover .card-btn {
+      background: #00e5ff;
+      transform: translateX(2px);
+    }
+    .card-btn svg {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+    }
+
+    /* --- Планшет --- */
+    @media (min-width: 600px) {
+      .card-info { padding: 16px 16px 18px; }
+      .card-name { font-size: 1rem; }
+      .card-desc { font-size: 0.78rem; }
+      .card-price { font-size: 1.25rem; }
+      .card-spec-val { font-size: 0.75rem; }
+      .card-visual { padding: 24px; }
+      .card-label { font-size: 0.62rem; }
+    }
+
+    /* --- Десктоп --- */
+    @media (min-width: 992px) {
+      .card { border-radius: 18px; }
+      .card-info { padding: 18px 20px 22px; }
+      .card-name { font-size: 1.05rem; }
+      .card-desc { font-size: 0.82rem; }
+      .card-price { font-size: 1.35rem; }
+      .card-spec-val { font-size: 0.78rem; }
+      .card-spec { padding: 10px 6px; }
+      .card-visual { padding: 28px; }
+      .card-btn { padding: 9px 16px; font-size: 0.7rem; min-height: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <a href="#" class="card">
+      <div class="card-visual">
+        <img src="img/king-kong-600w-main.png" alt="TERRA King 600" onerror="this.style.opacity='0.2'">
+        <span class="card-label card-label--terra">Terra</span>
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">TERRA 1000</h3>
+        <p class="card-desc">Мощное электрокресло для города и бездорожья</p>
+        <div class="card-specs">
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9889;</span>
+            <span class="card-spec-val">600W</span>
+            <span class="card-spec-label">мотор</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#8987;</span>
+            <span class="card-spec-val">12 км/ч</span>
+            <span class="card-spec-label">скорость</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#128267;</span>
+            <span class="card-spec-val">30-60 км</span>
+            <span class="card-spec-label">запас</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">370 000 &#8381;</div>
+            <div class="card-price-hint">от завода</div>
+          </div>
+          <div class="card-btn">
+            Подробнее
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-visual">
+        <img src="img/cloudrise-main.png" alt="VISTA Lift" onerror="this.style.opacity='0.2'">
+        <span class="card-label card-label--vista">Vista</span>
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">VISTA Lift</h3>
+        <p class="card-desc">Компактное складное кресло с подъёмом сиденья</p>
+        <div class="card-specs">
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9889;</span>
+            <span class="card-spec-val">250W</span>
+            <span class="card-spec-label">мотор</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#8987;</span>
+            <span class="card-spec-val">6 км/ч</span>
+            <span class="card-spec-label">скорость</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9878;</span>
+            <span class="card-spec-val">26 кг</span>
+            <span class="card-spec-label">вес</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">158 000 &#8381;</div>
+            <div class="card-price-hint">от завода</div>
+          </div>
+          <div class="card-btn">
+            Подробнее
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-visual">
+        <img src="img/fs129f1-main.png" alt="NEXUS 129 Pro" onerror="this.style.opacity='0.2'">
+        <span class="card-label card-label--nexus">Nexus</span>
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">NEXUS 129 Pro</h3>
+        <p class="card-desc">Премиальное кресло с вертикализацией</p>
+        <div class="card-specs">
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9889;</span>
+            <span class="card-spec-val">350W×2</span>
+            <span class="card-spec-label">мотор</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#8987;</span>
+            <span class="card-spec-val">5-8 км/ч</span>
+            <span class="card-spec-label">скорость</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9878;</span>
+            <span class="card-spec-val">93 кг</span>
+            <span class="card-spec-label">вес</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">490 000 &#8381;</div>
+            <div class="card-price-hint">от завода</div>
+          </div>
+          <div class="card-btn">
+            Подробнее
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-visual">
+        <img src="img/lifter-large-main.png" alt="DELTA Transfer Pro" onerror="this.style.opacity='0.2'">
+        <span class="card-label card-label--delta">Delta</span>
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">DELTA Transfer Pro</h3>
+        <p class="card-desc">Электрический подъёмник для пересаживания</p>
+        <div class="card-specs">
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9878;</span>
+            <span class="card-spec-val">до 150 кг</span>
+            <span class="card-spec-label">нагрузка</span>
+          </div>
+          <div class="card-spec">
+            <span class="card-spec-icon">&#9889;</span>
+            <span class="card-spec-val">электро</span>
+            <span class="card-spec-label">привод</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">78 000 &#8381;</div>
+            <div class="card-price-hint">от завода</div>
+          </div>
+          <div class="card-btn">
+            Подробнее
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>
