@@ -36,7 +36,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Апгрейд мотора до 800/1000W", "Кожаное сиденье (чёрно-красное / чёрное)", "Сиденье для сопровождающего сзади", "Подставка для ног", "Электрический подъём сиденья", "Одноручное управление", "Электрическое лежание", "Козырёк от солнца", "Электромагнитные тормоза", "Масляные дисковые тормоза", "Электрический подъём ног", "Ручка-акселератор", "Апгрейд задних колёс до 16\""],
-    images: ["img/king-kong-600w-main.jpg", "img/king-kong-600w-alt1.jpg", "img/king-kong-600w-alt2.jpg"],
+    images: ["img/terra-alt3.jpg", "img/terra-alt4.jpg", "img/terra-alt5.jpg", "img/terra-alt6.jpg"],
     price: 370000,
     catalogPage: 2
   },
@@ -68,7 +68,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "130 кг"
     },
     options: ["Апгрейд мотора до 1000W", "Кожаное сиденье", "Санитарное сиденье", "Электрический подъём сиденья", "Одноручное управление", "Электрическое лежание", "Козырёк от солнца", "Электромагнитные тормоза", "Электрический подъём ног", "Кастомизация размера сиденья", "Ручка-акселератор"],
-    images: ["img/king-kong-800w-main.jpg", "img/king-kong-800w-alt1.jpg", "img/king-kong-800w-alt2.jpg"],
+    images: ["img/king-kong-800w-main.jpg", "img/king-kong-800w-alt1.jpg", "img/king-kong-800w-alt2.jpg", "img/king-kong-800w-alt3.jpg", "img/king-kong-800w-alt4.jpg", "img/king-kong-800w-alt5.jpg"],
     price: 398000,
     catalogPage: 3
   },
@@ -101,7 +101,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "150 кг"
     },
     options: ["Апгрейд мотора до 1000W", "Кожаное сиденье", "Электромагнитные тормоза", "Масляные дисковые тормоза", "Одноручное управление", "Электрический подъём ног", "Ручка-акселератор", "Кастомизация размера сиденья"],
-    images: ["img/king-kong-double-main.jpg", "img/king-kong-double-alt1.jpg", "img/king-kong-double-alt2.jpg"],
+    images: ["img/king-kong-double-main.jpg", "img/king-kong-double-alt1.jpg", "img/king-kong-double-alt2.jpg", "img/king-kong-double-alt3.jpg"],
     price: 450000,
     catalogPage: 4
   },
@@ -165,7 +165,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Кожаное сиденье", "Сиденье для сопровождающего сзади", "Ручная регулировка подъёма ног", "Электрический подъём ног", "Электрическое лежание", "Электрический подъём сиденья", "Козырёк от солнца", "Беспроводной пульт управления", "Подставка для ног", "Апгрейд задних колёс до 16\"", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
-    images: ["img/comfort-joystick-main.jpg", "img/comfort-joystick-alt1.jpg", "img/comfort-joystick-alt2.jpg"],
+    images: ["img/comfort-joystick-main.jpg", "img/comfort-joystick-alt1.jpg", "img/comfort-joystick-alt2.jpg", "img/comfort-joystick-alt3.jpg", "img/comfort-joystick-alt4.jpg"],
     price: 310000,
     catalogPage: 6
   },
@@ -197,7 +197,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Отдельный подголовник / интегрированное гоночное сиденье", "Сиденье для сопровождающего сзади", "Козырёк от солнца", "Беспроводной пульт", "Апгрейд задних колёс до 16\"", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
-    images: ["img/comfort-offroad-main.jpg", "img/comfort-offroad-alt1.jpg", "img/comfort-offroad-alt2.jpg"],
+    images: ["img/comfort-offroad-main.jpg", "img/comfort-offroad-alt1.jpg", "img/comfort-offroad-alt2.jpg", "img/comfort-offroad-alt3.jpg", "img/comfort-offroad-alt4.jpg"],
     price: 330000,
     catalogPage: 7
   },
@@ -229,7 +229,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Сиденье для сопровождающего сзади", "Ручная регулировка подъёма ног", "Электрический подъём ног", "Электрическое лежание", "Электрический подъём сиденья", "Козырёк от солнца", "Беспроводной пульт", "Санитарное сиденье", "Апгрейд задних колёс до 16\"", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
-    images: ["img/comfort-compact-main.jpg", "img/comfort-compact-alt1.jpg", "img/comfort-compact-alt2.jpg"],
+    images: ["img/comfort-compact-main.jpg", "img/comfort-compact-alt1.jpg", "img/comfort-compact-alt2.jpg", "img/comfort-compact-alt3.jpg", "img/comfort-compact-alt4.jpg"],
     price: 318000,
     catalogPage: 8
   },
@@ -328,7 +328,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Электрический подъём ног (опция)"],
-    images: ["img/cloudrise-main.jpg", "img/cloudrise-alt1.jpg", "img/cloudrise-alt2.jpg"],
+    images: ["img/cloudrise-main.jpg", "img/cloudrise-alt1.jpg", "img/cloudrise-alt2.jpg", "img/cloudrise-max-alt1.jpg", "img/cloudrise-max-alt2.jpg", "img/cloudrise-mini-alt1.jpg", "img/cloudrise-mini-alt2.jpg"],
     price: 338000,
     catalogPage: 21
   },
@@ -481,7 +481,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина для хранения", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног"],
-    images: ["img/th201-alt2.jpg", "img/th201-alt1.jpg", "img/th201-main.jpg"],
+    images: ["img/th201-main.jpg", "img/th201-alt1.jpg", "img/th201-alt2.jpg", "img/th201-offroad-alt1.jpg", "img/th201-offroad-alt2.jpg"],
     price: 170000,
     catalogPage: 24
   },
@@ -513,7 +513,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Два стиля задних колёс (полые / дисковые)", "Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног", "Левостороннее / правостороннее управление"],
-    images: ["img/th201a-alt1.jpg", "img/th201a-alt2.jpg", "img/th201a-alt3.jpg"],
+    images: ["img/th201a-main.jpg", "img/th201a-alt1.jpg", "img/th201a-alt2.jpg", "img/th201a-alt3.jpg", "img/th201a-alt4.jpg", "img/th201a-alt5.jpg", "img/th201a-d-alt1.jpg", "img/th201a-d-alt2.jpg"],
     price: 164000,
     catalogPage: 25
   },
@@ -545,7 +545,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Апгрейд мотора до 350W", "Козырёк от солнца", "Подставка для ног", "Левостороннее / правостороннее управление", "Подвесное сиденье для сопровождающего"],
-    images: ["img/th201k-alt1.jpg", "img/th201k-alt2.jpg", "img/th201k-alt3.jpg"],
+    images: ["img/th201k-main.jpg", "img/th201k-alt1.jpg", "img/th201k-alt2.jpg", "img/th201k-alt3.jpg", "img/th201k-alt4.jpg", "img/th201k-alt5.jpg"],
     price: 178000,
     catalogPage: 26
   },
@@ -859,7 +859,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/fullback-h2-main.jpg", "img/fullback-h2-alt1.jpg", "img/fullback-h2-alt2.jpg"],
+    images: ["img/fullback-h2-main.jpg", "img/fullback-h2-alt1.jpg", "img/fullback-h2-alt2.jpg", "img/fullback-h2-h3-alt1.jpg", "img/fullback-h2-h3-alt2.jpg"],
     price: 390000,
     catalogPage: 14
   },
