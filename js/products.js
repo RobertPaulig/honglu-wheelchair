@@ -481,7 +481,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина для хранения", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног"],
-    images: ["img/th201-main.jpg", "img/th201-alt1.jpg", "img/th201-alt2.jpg"],
+    images: ["img/th201-alt2.jpg", "img/th201-alt1.jpg", "img/th201-main.jpg"],
     price: 170000,
     catalogPage: 24
   },
