@@ -59,14 +59,15 @@ function renderHome() {
       const count = getProductsByCategory(cat.id).length;
       const products = getProductsByCategory(cat.id);
       const priceFrom = Math.min(...products.map(p => p.price));
+      const [lineName, lineSubtitle] = cat.name.split(" — ");
       linesGrid.innerHTML += `
         <a href="category.html?cat=${cat.id}" class="line-card">
           <div class="line-card-img-wrap">
             <img src="${cat.img}" alt="${cat.name}" onerror="this.src='img/hero-banner.jpg'">
           </div>
           <div class="line-card-body">
-            <div class="line-card-icon">${icons[cat.id] || ""}</div>
-            <h3 class="line-card-title">${cat.name}</h3>
+            <div class="line-card-name">${lineName}</div>
+            <div class="line-card-subtitle">${lineSubtitle || ""}</div>
             <p class="line-card-desc">${cat.desc}</p>
             <div class="line-card-meta">
               <span class="line-card-count">${count} моделей</span>
@@ -96,13 +97,15 @@ function renderCatalog() {
     const count = getProductsByCategory(cat.id).length;
     const products = getProductsByCategory(cat.id);
     const priceFrom = Math.min(...products.map(p => p.price));
+    const [lineName, lineSubtitle] = cat.name.split(" — ");
     grid.innerHTML += `
       <a href="category.html?cat=${cat.id}" class="line-card">
         <div class="line-card-img-wrap">
           <img src="${cat.img}" alt="${cat.name}" onerror="this.src='img/hero-banner.jpg'">
         </div>
         <div class="line-card-body">
-          <h3 class="line-card-title">${cat.name}</h3>
+          <div class="line-card-name">${lineName}</div>
+          <div class="line-card-subtitle">${lineSubtitle || ""}</div>
           <p class="line-card-desc">${cat.desc}</p>
           <div class="line-card-meta">
             <span class="line-card-count">${count} моделей</span>
