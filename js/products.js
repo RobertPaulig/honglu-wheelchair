@@ -261,7 +261,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Регулируемые / съёмные подлокотники", "Сиденье для сопровождающего сзади", "Подставка для ног", "Электрическое лежание", "Электрический подъём ног", "Козырёк от солнца", "Беспроводной пульт", "Кастомизация размера сиденья", "Левостороннее / заднее управление"],
-    images: ["img/comfort-suspension-main.jpg", "img/comfort-suspension-alt1.jpg", "img/comfort-suspension-alt2.jpg"],
+    images: ["img/comfort-suspension-main.jpg", "img/comfort-suspension-alt1.jpg", "img/comfort-suspension-alt2.jpg", "img/comfort-suspension-alt3.jpg", "img/comfort-suspension-alt4.jpg"],
     price: 378000,
     catalogPage: 9
   },
@@ -294,7 +294,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["АКБ: 24V 12Ah свинцово-кислотный (стандарт)", "АКБ: 24V 24Ah свинцово-кислотный", "АКБ: 24V 12Ah литий", "АКБ: 24V 20Ah литий", "Чехол для ног (реабилитация)"],
-    images: ["img/velo-main.jpg", "img/velo-alt1.jpg", "img/velo-alt2.jpg"],
+    images: ["img/velo-main.jpg", "img/velo-alt1.jpg", "img/velo-wheelchair-alt1.jpg", "img/velo-alt2.jpg", "img/velo-wheelchair-alt2.jpg", "img/velo-trike-alt3.jpg", "img/velo-trike-alt4.jpg"],
     price: 138000,
     catalogPage: 41
   },
@@ -417,7 +417,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Санитарное сиденье", "Полная кастомизация размеров"],
-    images: ["img/wheelchair-bed-main.jpg", "img/wheelchair-bed-alt1.jpg", "img/wheelchair-bed-alt2.jpg"],
+    images: ["img/wheelchair-bed-main.jpg", "img/wheelchair-bed-alt1.jpg", "img/wheelchair-bed-alt2.jpg", "img/wheelchair-bed-alt3.jpg", "img/wheelchair-bed-alt4.jpg", "img/wheelchair-bed-alt5.jpg"],
     price: 390000,
     catalogPage: 20
   },
@@ -481,7 +481,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина для хранения", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног"],
-    images: ["img/th201-main.jpg", "img/th201-alt1.jpg", "img/th201-alt2.jpg", "img/th201-offroad-alt1.jpg", "img/th201-offroad-alt2.jpg"],
+    images: ["img/th201-main.jpg", "img/th201-alt1.jpg", "img/th201-offroad-alt1.jpg", "img/th201-alt2.jpg", "img/th201-offroad-alt2.jpg", "img/th201-alt3.jpg"],
     price: 170000,
     catalogPage: 24
   },
@@ -513,7 +513,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Два стиля задних колёс (полые / дисковые)", "Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног", "Левостороннее / правостороннее управление"],
-    images: ["img/th201a-main.jpg", "img/th201a-alt1.jpg", "img/th201a-alt2.jpg", "img/th201a-alt3.jpg", "img/th201a-alt4.jpg", "img/th201a-alt5.jpg", "img/th201a-d-alt1.jpg", "img/th201a-d-alt2.jpg"],
+    images: ["img/th201a-main.jpg", "img/th201a-alt1.jpg", "img/th201a-d-alt1.jpg", "img/th201a-alt2.jpg", "img/th201a-d-alt2.jpg", "img/th201a-alt3.jpg", "img/th201a-alt4.jpg", "img/th201a-alt5.jpg", "img/th201a-alt6.jpg"],
     price: 164000,
     catalogPage: 25
   },
@@ -545,7 +545,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Апгрейд мотора до 350W", "Козырёк от солнца", "Подставка для ног", "Левостороннее / правостороннее управление", "Подвесное сиденье для сопровождающего"],
-    images: ["img/th201k-main.jpg", "img/th201k-alt1.jpg", "img/th201k-alt2.jpg", "img/th201k-alt3.jpg", "img/th201k-alt4.jpg", "img/th201k-alt5.jpg"],
+    images: ["img/th201k-main.jpg", "img/th201k-alt1.jpg", "img/th201k-alt2.jpg", "img/th201k-alt3.jpg", "img/th201k-alt4.jpg", "img/th201k-alt5.jpg", "img/th201k-alt6.jpg"],
     price: 178000,
     catalogPage: 26
   },
@@ -577,7 +577,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Апгрейд до двух моторов 250W", "Два стиля колёс", "Ручной подъём ног", "Задняя корзина", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Левостороннее / правостороннее управление", "Подставка для ног", "Ручка-акселератор"],
-    images: ["img/th109-108-main.jpg", "img/th109-108-alt1.jpg", "img/th109-108-alt2.jpg"],
+    images: ["img/th109-108-main.jpg", "img/th109-108-alt1.jpg", "img/th109-108-alt2.jpg", "img/th109-108-alt3.jpg", "img/th109-108-alt4.jpg", "img/th109-108-alt5.jpg"],
     price: 158000,
     catalogPage: 28
   },
@@ -609,7 +609,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Задняя корзина", "Козырёк от солнца", "Ручка-акселератор", "Подвесное сиденье для сопровождающего"],
-    images: ["img/th101-main.jpg", "img/th101-alt1.jpg", "img/th101-alt2.jpg"],
+    images: ["img/th101-main.jpg", "img/th101-alt1.jpg", "img/th101-alt2.jpg", "img/th101-alt3.jpg", "img/th101-alt4.jpg", "img/th101-alt5.jpg"],
     price: 178000,
     catalogPage: 29
   },
@@ -694,7 +694,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/healthbless-k2-main.jpg", "img/healthbless-k2-alt1.jpg", "img/healthbless-k2-alt2.jpg"],
+    images: ["img/healthbless-k2-main.jpg", "img/healthbless-k2-alt1.jpg", "img/healthbless-k2-alt2.jpg", "img/healthbless-k2-alt3.jpg", "img/healthbless-k2-alt4.jpg", "img/healthbless-k2-alt5.jpg"],
     price: 298000,
     catalogPage: 19
   },
@@ -949,7 +949,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/blackhawks-h1-main.jpg", "img/blackhawks-h1-alt1.jpg", "img/blackhawks-h1-alt2.jpg"],
+    images: ["img/blackhawks-h1-main.jpg", "img/blackhawks-h1-alt1.jpg", "img/blackhawks-h1-alt2.jpg", "img/blackhawks-h1-alt3.jpg", "img/blackhawks-h1-alt4.jpg"],
     price: 158000,
     catalogPage: 16
   },
@@ -983,7 +983,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Модель с высокой электрической спинкой", "Подставка для ног", "14\" пневматические задние колёса", "Сиденье для сопровождающего", "Левостороннее / заднее управление", "Козырёк от солнца"],
-    images: ["img/blackhawks-h2-main.jpg", "img/blackhawks-h2-alt1.jpg", "img/blackhawks-h2-alt2.jpg"],
+    images: ["img/blackhawks-h2-main.jpg", "img/blackhawks-h2-alt1.jpg", "img/blackhawks-h2-alt2.jpg", "img/blackhawks-h2-alt3.jpg"],
     price: 350000,
     catalogPage: 17
   },
@@ -1013,7 +1013,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/healthbless-k1-main.jpg", "img/healthbless-k1-alt1.jpg", "img/healthbless-k1-alt2.jpg"],
+    images: ["img/healthbless-k1-main.jpg", "img/healthbless-k1-alt1.jpg", "img/healthbless-k1-alt2.jpg", "img/healthbless-k1-alt3.jpg", "img/healthbless-k1-alt4.jpg", "img/healthbless-k1-alt5.jpg"],
     price: 178000,
     catalogPage: 18
   },
@@ -1036,7 +1036,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-frame-manual-main.jpg", "img/rehab-frame-manual-alt1.jpg", "img/rehab-frame-manual-alt2.jpg"],
+    images: ["img/rehab-frame-manual-main.jpg", "img/rehab-frame-manual-alt1.jpg", "img/rehab-frame-manual-alt2.jpg", "img/rehab-frame-manual-alt3.jpg", "img/rehab-frame-manual-alt4.jpg", "img/rehab-frame-manual-alt5.jpg"],
     price: 90000,
     catalogPage: 30
   },
@@ -1060,7 +1060,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-frame-pneumatic-main.jpg", "img/rehab-frame-pneumatic-alt1.jpg", "img/rehab-frame-pneumatic-alt2.jpg"],
+    images: ["img/rehab-frame-pneumatic-main.jpg", "img/rehab-frame-pneumatic-alt1.jpg", "img/rehab-frame-pneumatic-alt2.jpg", "img/rehab-frame-pneumatic-alt3.jpg", "img/rehab-frame-pneumatic-alt4.jpg", "img/rehab-frame-pneumatic-alt5.jpg"],
     price: 110000,
     catalogPage: 31
   },
@@ -1110,7 +1110,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-frame-electric-main.jpg", "img/rehab-frame-electric-alt1.jpg", "img/rehab-frame-electric-alt2.jpg"],
+    images: ["img/rehab-frame-electric-main.jpg", "img/rehab-frame-electric-alt1.jpg", "img/rehab-frame-electric-alt2.jpg", "img/rehab-frame-electric-alt3.jpg", "img/rehab-frame-electric-alt4.jpg", "img/rehab-frame-electric-alt5.jpg"],
     price: 170000,
     catalogPage: 33
   },
@@ -1137,7 +1137,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-walker-main.jpg", "img/rehab-walker-alt1.jpg", "img/rehab-walker-alt2.jpg"],
+    images: ["img/rehab-walker-main.jpg", "img/rehab-walker-alt1.jpg", "img/rehab-walker-alt2.jpg", "img/rehab-walker-alt3.jpg", "img/rehab-walker-alt4.jpg", "img/rehab-walker-alt5.jpg"],
     price: 110000,
     catalogPage: 35
   },
@@ -1166,7 +1166,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-electric-walker-main.jpg", "img/rehab-electric-walker-alt1.jpg", "img/rehab-electric-walker-alt2.jpg"],
+    images: ["img/rehab-electric-walker-main.jpg", "img/rehab-electric-walker-alt1.jpg", "img/rehab-electric-walker-alt2.jpg", "img/rehab-electric-walker-alt3.jpg"],
     price: 150000,
     catalogPage: 36
   },
@@ -1192,7 +1192,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-walking-aid-main.jpg", "img/rehab-walking-aid-alt1.jpg", "img/rehab-walking-aid-alt2.jpg"],
+    images: ["img/rehab-walking-aid-main.jpg", "img/rehab-walking-aid-alt1.jpg", "img/rehab-walking-aid-alt2.jpg", "img/rehab-walking-aid-alt3.jpg", "img/rehab-walking-aid-alt4.jpg", "img/rehab-walking-aid-alt5.jpg"],
     price: 98000,
     catalogPage: 37
   },
@@ -1214,7 +1214,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/lifter-small-main.jpg", "img/lifter-small-alt1.jpg", "img/lifter-small-alt2.jpg"],
+    images: ["img/lifter-small-main.jpg", "img/lifter-small-alt1.jpg", "img/lifter-small-alt2.jpg", "img/lifter-small-alt3.jpg", "img/lifter-small-alt4.jpg", "img/lifter-small-alt5.jpg"],
     price: 78000,
     catalogPage: 38
   },
@@ -1236,7 +1236,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: [],
-    images: ["img/lifter-large-main.jpg", "img/lifter-large-alt1.jpg", "img/lifter-large-alt2.jpg"],
+    images: ["img/lifter-large-main.jpg", "img/lifter-large-alt1.jpg", "img/lifter-large-alt2.jpg", "img/lifter-large-alt3.jpg", "img/lifter-large-alt4.jpg", "img/lifter-large-alt5.jpg"],
     price: 90000,
     catalogPage: 39
   },
@@ -1257,7 +1257,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Мягкое кольцо с крышкой", "Воронкообразный туалет", "Без функции обмыва"],
-    images: ["img/sanitary-main.jpg", "img/sanitary-alt1.jpg", "img/sanitary-alt2.jpg"],
+    images: ["img/sanitary-main.jpg", "img/sanitary-alt1.jpg", "img/sanitary-chair-alt1.jpg", "img/sanitary-alt2.jpg", "img/sanitary-chair-alt2.jpg", "img/sanitary-chair-alt3.jpg", "img/sanitary-chair-alt4.jpg", "img/sanitary-chair-alt5.jpg", "img/sanitary-chair-alt6.jpg", "img/sanitary-chair-alt7.jpg"],
     price: 50000,
     catalogPage: 40
   }
