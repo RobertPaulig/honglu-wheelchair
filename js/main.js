@@ -329,8 +329,6 @@ function productCard(p) {
   const load = p.specs["Макс. нагрузка"] || p.specs["Грузоподъёмность"] || "";
   let motor = p.specs["Мотор"] || p.specs["Двигатель"] || "";
   motor = motor.replace(/\s*\(.*?\)/g, "").trim();
-  // Shorten: remove voltage, keep only wattage
-  motor = motor.replace(/\d+V\s*/gi, "").replace(/дифференциальный/gi, "").replace(/бесщёточный/gi, "").trim();
 
   // Build specs grid
   let specsHtml = "";
