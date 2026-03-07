@@ -94,16 +94,22 @@ function renderCatalog() {
   if (!grid) return;
   CATEGORIES.forEach(cat => {
     const count = getProductsByCategory(cat.id).length;
+    const products = getProductsByCategory(cat.id);
+    const priceFrom = Math.min(...products.map(p => p.price));
     grid.innerHTML += `
-      <a href="category.html?cat=${cat.id}" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="${cat.img}" alt="${cat.name}" class="category-card-img" onerror="this.src='img/hero-banner.jpg'">
+      <a href="category.html?cat=${cat.id}" class="line-card">
+        <div class="line-card-img-wrap">
+          <img src="${cat.img}" alt="${cat.name}" onerror="this.src='img/hero-banner.jpg'">
         </div>
-        <div class="category-card-body">
-          <h3>${cat.name}</h3>
-          <p>${cat.desc}</p>
+        <div class="line-card-body">
+          <h3 class="line-card-title">${cat.name}</h3>
+          <p class="line-card-desc">${cat.desc}</p>
+          <div class="line-card-meta">
+            <span class="line-card-count">${count} моделей</span>
+            <span class="line-card-price">от ${formatPrice(priceFrom)}</span>
+          </div>
         </div>
-        <div class="category-card-count">${count}</div>
+        <div class="line-card-arrow">&rarr;</div>
       </a>`;
   });
 }
