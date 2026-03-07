@@ -21,6 +21,7 @@
   --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
   --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
   --shadow-accent: 0 4px 20px rgba(37,99,235,0.2);
+  --bg-light: #f1f5f9;
   --radius-sm: 10px;
   --radius: 16px;
   --radius-lg: 24px;
@@ -79,7 +80,7 @@ button { cursor: pointer; font-family: inherit; }
 .nav a:hover, .nav a.active { color: var(--primary); background: var(--bg-soft); }
 .nav a.active { color: var(--accent); }
 
-.burger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; padding: 8px; }
+.burger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; padding: 12px; min-width: 44px; min-height: 44px; justify-content: center; align-items: center; }
 .burger span { width: 22px; height: 2px; background: var(--primary); border-radius: 2px; transition: var(--transition); }
 .burger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
 .burger.active span:nth-child(2) { opacity: 0; }
@@ -292,7 +293,7 @@ button { cursor: pointer; font-family: inherit; }
 .product-card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; overflow: hidden; max-height: 44px; }
 .card-tag {
   padding: 2px 6px; background: var(--bg-soft); border-radius: 4px;
-  font-size: 0.65rem; color: var(--text-secondary); font-weight: 500;
+  font-size: 0.7rem; color: var(--text-secondary); font-weight: 500;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%;
 }
 
@@ -339,7 +340,7 @@ button { cursor: pointer; font-family: inherit; }
 
 .carousel-nav {
   position: absolute; top: 50%; transform: translateY(-50%);
-  width: 36px; height: 36px; background: rgba(255,255,255,0.9);
+  width: 44px; height: 44px; background: rgba(255,255,255,0.9);
   border: none; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.1rem; box-shadow: var(--shadow); color: var(--primary); z-index: 2;
@@ -474,7 +475,7 @@ button { cursor: pointer; font-family: inherit; }
 .sticky-bar-actions { display: flex; gap: 5px; margin-left: auto; flex-shrink: 0; }
 .sticky-btn {
   display: flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px; border-radius: 50%; border: none; cursor: pointer;
+  width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer;
   transition: var(--transition); text-decoration: none; flex-shrink: 0;
 }
 .sticky-btn svg { width: 18px; height: 18px; }
@@ -482,7 +483,7 @@ button { cursor: pointer; font-family: inherit; }
 .sticky-btn-tg { background: #0088cc; color: #fff; }
 .sticky-btn-wa { background: #25d366; color: #fff; }
 .sticky-btn-order {
-  width: auto; border-radius: var(--radius-sm); padding: 0 14px; height: 36px;
+  width: auto; border-radius: var(--radius-sm); padding: 0 14px; height: 44px;
   background: var(--accent); color: #fff; font-weight: 700; font-size: 0.8rem;
 }
 .sticky-btn:hover { opacity: 0.85; }
@@ -604,7 +605,7 @@ button { cursor: pointer; font-family: inherit; }
 .modal h2 { font-size: 1.2rem; color: var(--primary); margin-bottom: 16px; }
 .modal-close {
   position: absolute; top: 14px; right: 14px; background: var(--bg-soft);
-  border: none; width: 30px; height: 30px; border-radius: 50%;
+  border: none; width: 44px; height: 44px; border-radius: 50%;
   font-size: 1rem; color: var(--text-secondary); display: flex; align-items: center; justify-content: center;
 }
 

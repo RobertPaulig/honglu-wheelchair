@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Категория — СИ-ВАН</title>
+  <meta name="description" content="Электрокресла от завода Honglu. Подробные характеристики, фото, цены. Доставка по РФ.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -38,8 +39,26 @@
 
   <button class="scroll-top" title="Наверх">&#8593;</button>
 
+  <!-- Request Modal -->
+  <div class="modal-overlay" id="request-modal">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <button class="modal-close" onclick="closeRequestModal()">&times;</button>
+      <h2>Оставить заявку</h2>
+      <form class="request-form">
+        <div class="form-group"><label>Ваше имя *</label><input type="text" name="name" required placeholder="Иван Иванов"></div>
+        <div class="form-group"><label>Телефон *</label><input type="tel" name="phone" required placeholder="+7 (999) 123-45-67"></div>
+        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="example@mail.ru"></div>
+        <div class="form-group"><label>Модель</label><input type="text" name="model" id="request-model" readonly></div>
+        <div class="form-group"><label>Сообщение</label><textarea name="message" placeholder="Опишите ваши пожелания..."></textarea></div>
+        <button type="submit" class="btn btn-accent btn-block btn-lg">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
   <script src="js/products.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
 
