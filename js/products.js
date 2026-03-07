@@ -481,7 +481,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина для хранения", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног"],
-    images: ["img/th201-main.jpg", "img/th201-alt1.jpg", "img/th201-offroad-alt1.jpg", "img/th201-alt2.jpg", "img/th201-offroad-alt2.jpg", "img/th201-alt3.jpg"],
+    images: ["img/th201-alt1.jpg", "img/th201-offroad-alt1.jpg", "img/th201-alt2.jpg", "img/th201-offroad-alt2.jpg", "img/th201-alt3.jpg", "img/th201-main.jpg"],
     price: 170000,
     catalogPage: 24
   },
@@ -513,7 +513,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Два стиля задних колёс (полые / дисковые)", "Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Козырёк от солнца", "Подвесное сиденье для сопровождающего", "Подставка для ног", "Левостороннее / правостороннее управление"],
-    images: ["img/th201a-main.jpg", "img/th201a-alt1.jpg", "img/th201a-d-alt1.jpg", "img/th201a-alt2.jpg", "img/th201a-d-alt2.jpg", "img/th201a-alt3.jpg", "img/th201a-alt4.jpg", "img/th201a-alt5.jpg", "img/th201a-alt6.jpg"],
+    images: ["img/th201a-alt1.jpg", "img/th201a-d-alt1.jpg", "img/th201a-alt2.jpg", "img/th201a-d-alt2.jpg", "img/th201a-alt3.jpg", "img/th201a-alt4.jpg", "img/th201a-alt5.jpg", "img/th201a-alt6.jpg", "img/th201a-main.jpg"],
     price: 164000,
     catalogPage: 25
   },
@@ -545,7 +545,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["Ручной подъём ног", "Электромагнитный тормоз", "Задняя корзина", "Апгрейд мотора до 350W", "Козырёк от солнца", "Подставка для ног", "Левостороннее / правостороннее управление", "Подвесное сиденье для сопровождающего"],
-    images: ["img/th201k-main.jpg", "img/th201k-alt1.jpg", "img/th201k-alt2.jpg", "img/th201k-alt3.jpg", "img/th201k-alt4.jpg", "img/th201k-alt5.jpg", "img/th201k-alt6.jpg"],
+    images: ["img/th201k-alt1.jpg", "img/th201k-alt2.jpg", "img/th201k-alt3.jpg", "img/th201k-alt4.jpg", "img/th201k-alt5.jpg", "img/th201k-alt6.jpg", "img/th201k-main.jpg"],
     price: 178000,
     catalogPage: 26
   },
