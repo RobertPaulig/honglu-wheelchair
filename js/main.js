@@ -225,7 +225,7 @@ function initCarousel(images, altText) {
   const thumbsWrap = document.getElementById("carousel-thumbs");
   if (!track) return;
 
-  const validImages = images.filter(Boolean);
+  const validImages = images.filter(Boolean).map(s => s.replace(/\.jpg$/, '.png'));
   if (validImages.length === 0) return;
 
   let current = 0;
