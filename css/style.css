@@ -311,6 +311,7 @@ button { cursor: pointer; font-family: inherit; }
   text-decoration: none; color: #fff;
   transition: transform 0.35s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.35s ease;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 .product-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(26,26,46,0.3); }
 
