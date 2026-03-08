@@ -68,7 +68,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "130 кг"
     },
     options: ["Апгрейд мотора до 1000W", "Кожаное сиденье", "Санитарное сиденье", "Электрический подъём сиденья", "Одноручное управление", "Электрическое лежание", "Козырёк от солнца", "Электромагнитные тормоза", "Электрический подъём ног", "Кастомизация размера сиденья", "Ручка-акселератор"],
-    images: ["img/king-kong-800w-main.jpg", "img/king-kong-800w-alt1.jpg", "img/king-kong-800w-alt2.jpg", "img/king-kong-800w-alt3.jpg", "img/king-kong-800w-alt4.jpg", "img/king-kong-800w-alt5.jpg"],
+    images: ["img/king-kong-800w-alt1.jpg", "img/king-kong-800w-main.jpg", "img/king-kong-800w-alt2.jpg", "img/king-kong-800w-alt3.jpg", "img/king-kong-800w-alt4.jpg", "img/king-kong-800w-alt5.jpg"],
     price: 398000,
     catalogPage: 3
   },
@@ -101,7 +101,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "150 кг"
     },
     options: ["Апгрейд мотора до 1000W", "Кожаное сиденье", "Электромагнитные тормоза", "Масляные дисковые тормоза", "Одноручное управление", "Электрический подъём ног", "Ручка-акселератор", "Кастомизация размера сиденья"],
-    images: ["img/king-kong-double-main.jpg", "img/king-kong-double-alt1.jpg", "img/king-kong-double-alt2.jpg", "img/king-kong-double-alt3.jpg"],
+    images: ["img/king-kong-double-alt1.jpg", "img/king-kong-double-main.jpg", "img/king-kong-double-alt2.jpg", "img/king-kong-double-alt3.jpg"],
     price: 450000,
     catalogPage: 4
   },
