@@ -728,7 +728,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Кастомизация размера сиденья и спинки", "Кастомизация высоты педалей", "Беспроводной пульт", "Голосовое управление", "Козырёк от солнца"],
-    images: ["img/future-q1-rear-main.jpg", "img/future-q1-rear-alt1.jpg", "img/future-q1-rear-alt2.jpg"],
+    images: ["img/future-q1-rear-alt1.jpg", "img/future-q1-rear-main.jpg", "img/future-q1-rear-alt2.jpg"],
     price: 530000,
     catalogPage: 10
   },
@@ -763,7 +763,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Кастомизация размера сиденья и спинки", "Кастомизация высоты педалей", "Подставка для ног", "Беспроводной пульт", "Голосовое управление", "Козырёк от солнца"],
-    images: ["img/future-q1-front-main.jpg", "img/future-q1-front-alt1.jpg", "img/future-q1-front-alt2.jpg"],
+    images: ["img/future-q1-front-alt1.jpg", "img/future-q1-front-main.jpg", "img/future-q1-front-alt2.jpg"],
     price: 518000,
     catalogPage: 11
   },

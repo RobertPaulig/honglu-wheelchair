@@ -131,8 +131,12 @@ button { cursor: pointer; font-family: inherit; }
 .hero-v3 {
   background: var(--primary);
   padding: 80px 0 32px;
-  min-height: auto;
+  min-height: calc(100vh - var(--header-h));
+  min-height: calc(100dvh - var(--header-h));
+  display: flex;
+  align-items: center;
   overflow: hidden;
+  border-bottom: 3px solid var(--accent);
 }
 .hero-v3::before { display: none; }
 .hero-v3-grid {
@@ -206,8 +210,8 @@ button { cursor: pointer; font-family: inherit; }
   justify-content: center;
 }
 .hero-v3-image img {
-  max-width: 85%;
-  max-height: 280px;
+  max-width: 90%;
+  max-height: 300px;
   object-fit: contain;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.5));
 }
