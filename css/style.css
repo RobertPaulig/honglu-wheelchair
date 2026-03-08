@@ -141,24 +141,17 @@ button { cursor: pointer; font-family: inherit; }
   gap: 20px;
   align-items: center;
 }
-.hero-v3-brand {
-  font-size: 0.75rem;
-  font-weight: 700;
+.hero-v3-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
   color: var(--accent);
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-left: 3px solid var(--accent);
-  padding-left: 10px;
-}
-.hero-v3-brand span {
-  display: inline;
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: rgba(255,255,255,0.45);
-  text-transform: none;
-  letter-spacing: 0;
-  margin-left: 6px;
+  background: rgba(58,124,165,0.12);
+  border: 1px solid rgba(58,124,165,0.25);
+  border-radius: 100px;
+  padding: 5px 14px;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
 }
 .hero-v3-text { text-align: center; }
 .hero-v3-text h1 {
@@ -238,7 +231,6 @@ button { cursor: pointer; font-family: inherit; }
   .hero-v3-buttons { justify-content: flex-start; }
   .hero-v3-buttons .btn { font-size: 0.92rem; padding: 12px 28px; }
   .hero-v3-trust { justify-content: flex-start; }
-  .hero-v3-brand span { display: block; margin-left: 0; margin-top: 2px; }
 }
 
 /* ===== PRODUCT LINES GRID ===== */
