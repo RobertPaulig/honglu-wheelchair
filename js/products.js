@@ -294,7 +294,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: ["АКБ: 24V 12Ah свинцово-кислотный (стандарт)", "АКБ: 24V 24Ah свинцово-кислотный", "АКБ: 24V 12Ah литий", "АКБ: 24V 20Ah литий", "Чехол для ног (реабилитация)"],
-    images: ["img/velo-main.jpg", "img/velo-alt1.jpg", "img/velo-wheelchair-alt1.jpg", "img/velo-alt2.jpg", "img/velo-wheelchair-alt2.jpg", "img/velo-trike-alt3.jpg", "img/velo-trike-alt4.jpg"],
+    images: ["img/velo-trike-alt4.jpg", "img/velo-main.jpg", "img/velo-alt1.jpg", "img/velo-wheelchair-alt1.jpg", "img/velo-alt2.jpg", "img/velo-wheelchair-alt2.jpg", "img/velo-trike-alt3.jpg"],
     price: 138000,
     catalogPage: 41
   },
