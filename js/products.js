@@ -728,7 +728,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "120 кг"
     },
     options: ["Кастомизация размера сиденья и спинки", "Кастомизация высоты педалей", "Беспроводной пульт", "Голосовое управление", "Козырёк от солнца"],
-    images: ["img/future-q1-rear-alt1.jpg", "img/future-q1-rear-main.jpg", "img/future-q1-rear-alt2.jpg"],
+    images: ["img/future-q1-rear-alt1.jpg", "img/future-q1-rear-main.jpg"],
     price: 530000,
     catalogPage: 10
   },
@@ -1036,7 +1036,7 @@ const PRODUCTS = [
       "Макс. нагрузка": "100 кг"
     },
     options: [],
-    images: ["img/rehab-frame-manual-main.jpg", "img/rehab-frame-manual-alt1.jpg", "img/rehab-frame-manual-alt2.jpg", "img/rehab-frame-manual-alt3.jpg", "img/rehab-frame-manual-alt4.jpg", "img/rehab-frame-manual-alt5.jpg"],
+    images: ["img/rehab-frame-manual-alt1.jpg", "img/rehab-frame-manual-alt2.jpg", "img/rehab-frame-manual-alt3.jpg", "img/rehab-frame-manual-alt4.jpg", "img/rehab-frame-manual-alt5.jpg"],
     price: 90000,
     catalogPage: 30
   },
